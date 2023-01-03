@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+.container{
+    height: 350px;
+    width: 550px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.menu{
+    position: relative;
+    bottom: 35px;
+    right: 52px;
+}
+.left, .right, .top{
+    transform-origin: 0 0;
+}
+.left{
+    height: 100px;
+    width: 20px;
+    background-color: #dddddd;
+    transform: rotate(90deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+}
+.right{
+    height: 20px;
+    width: 100px;
+    background-color: #c8c8c8;
+    transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 100px;
+}
+.top{
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    transform: rotate(210deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 120px;
+    color: #f80f62;
+}
+.shadow{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    transform: rotate(210deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    top: 30px;
+    right: 30px;
+
+}
+.menu>div{
+    height: 0;
+    width: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.item1{
+    position: relative;
+    top: 100px;
+    left: 500px;
+}
+.item2{
+    position: relative;
+    top: 149.5px;
+    left: 413.5px;
+}
+.item3{
+    position: relative;
+    top: 199.5px;
+    left: 327.5px;
+}
+.item4{
+    position: relative;
+    top: 249px;
+    left: 241px;
+}
+.item5{
+    position: relative;
+    top: 298px;
+    left: 155px;
+}
+.fa-solid{
+    font-size: 50px;
+}
+i{
+    transform: rotate(90deg);
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+.item:hover{
+    transform: translateY(-20px);
+}
+.item:hover .shadow{
+    background-color: rgba(155, 155, 155, 0.25);
+    box-shadow: 0 0 30px rgba(8, 8, 8, 0.09);
+    transform: rotate(210deg) skew(-30deg) scaleY(0.864) translateY(20px);
+}
+.item:hover .top{
+    color: #fff;
+    background-color: #f80f62;
+}
+.item:hover .left{
+    background-color: #f7085c;
+}
+.item:hover .right{
+    background-color: #df0752;
+}
